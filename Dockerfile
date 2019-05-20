@@ -1,3 +1,3 @@
-FROM node:10.4.0
+FROM node:lts-stretch-slim
 
-RUN apt-get install -y imagemagick
+RUN apt-get update && apt-get install -y imagemagick
